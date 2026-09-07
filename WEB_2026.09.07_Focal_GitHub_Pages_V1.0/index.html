@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e0f14">
+  <title>Focal — Descargar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0e0f14;--ink2:#161820;--ink3:#1e2130;
+      --rim:rgba(255,255,255,.08);--tx:#f0f2ff;--tx2:#b8bdd8;
+      --tx3:#6b7299;--ember:#e8622a;--ember2:#f5834e;
+      --jade:#29c97c;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:'DM Sans',system-ui,sans-serif}
+    body{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      padding:24px;background:var(--ink);color:var(--tx);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 20% -10%,rgba(232,98,42,.14),transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 110%,rgba(41,201,124,.08),transparent 55%);
+    }
+    .card{
+      width:min(520px,100%);padding:42px 34px;text-align:center;
+      background:rgba(22,24,32,.94);border:1px solid var(--rim);
+      border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.35);
+    }
+    .logo{font-family:'Fraunces',serif;font-size:32px;font-weight:700;font-style:italic}
+    .logo em{color:var(--ember2);font-style:normal}
+    .icon{
+      width:72px;height:72px;margin:28px auto 20px;border-radius:18px;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(232,98,42,.12);font-size:34px;
+    }
+    h1{font-size:24px;margin:0 0 10px}
+    p{color:var(--tx2);line-height:1.6;margin:0 auto 26px;max-width:410px}
+    .file{
+      display:inline-block;margin-bottom:22px;padding:7px 12px;border:1px solid var(--rim);
+      border-radius:20px;background:var(--ink3);color:var(--tx3);font-size:12px;
+    }
+    .download{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      min-height:48px;padding:0 24px;border-radius:24px;background:var(--ember);
+      color:white;text-decoration:none;font-weight:700;transition:.18s;
+    }
+    .download:hover{background:var(--ember2);transform:translateY(-1px)}
+    .note{margin-top:20px;font-size:11px;color:var(--tx3)}
+    .ok{color:var(--jade)}
+    @media(max-width:480px){.card{padding:34px 22px}.logo{font-size:28px}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">Foc<em>al</em></div>
+    <div class="icon">📄</div>
+    <h1>Descarga Focal</h1>
+    <p>
+      Has llegado a la página de descarga. Pulsa el botón para guardar
+      <strong>mi-dia-2-6.html</strong> en tu dispositivo.
+    </p>
+    <div class="file">mi-dia-2-6.html</div><br>
+    <a class="download" href="mi-dia-2-6.html" download="mi-dia-2-6.html">
+      ↓&nbsp; Descargar archivo
+    </a>
+    <div class="note"><span class="ok">●</span> Descarga gratuita · Sin registro</div>
+  </main>
+</body>
+</html>
